@@ -54,11 +54,48 @@
             </div>
           </div>
 
+          <!-- RFI -->
+
           <div class="col-md-5">
-            <div id="videoplayer" class="banner-video">
-           <iframe src="https://player.vimeo.com/video/116286145?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
+            <div class="rfi-box">
+
+
+               <form id="form1" name="form1" accept-charset="UTF-8" autocomplete="off" class="wufoo topLabel page cta-form">
+                  <header id="header" class="info">
+                    <h4>Get more information from our team!</h4>
+                    <div class="error-msg"></div>
+                  </header>
+                  <ul style="max-width:100%;" class="no-style-type">
+                    <li id="foli1" class="notranslate">
+                      <label id="title1" for="name" class="desc">Name</label>
+                      <div>
+                        <input id="Field1" name="name" type="text" value="" maxlength="255" tabindex="1" onkeyup="" required="required" class="field text medium"/>
+                      </div>
+                    </li>
+                    <li id="foli2" class="notranslate">
+                      <label id="title2" for="email" class="desc">Email</label>
+                      <div>
+                        <input id="Field2" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="2" required="required" class="field text medium"/>
+                      </div>
+                    </li>
+                    <li id="foli3" class="phone notranslate">
+                      <label id="title3" for="phone" class="desc">Phone Number (optional)</label><span>
+                        <input id="Field3" name="phone" type="tel" value="" size="20" maxlength="20" tabindex="3" class="field text"/>
+                        <input name="tags" type="hidden" value="paid lead,general city landing page,Columbia"/></span>
+                    </li>
+                    <li class="buttons">
+                      <div>
+                        <input id="saveForm" name="saveForm" tabindex="4" type="submit" value="Submit" onClick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Information Request', eventLabel: 'Columbia Landing'});" style="display: block; margin-top: 20px; border:0px; width:155px; font-weight:200;" class="btText submit btn section-headline"/>
+                      </div>
+                    </li>
+                  </ul>
+                </form> 
+
+
+            </div><!-- /rfi-box -->  
           </div>
+
+          <!-- /RFI -->
 
       </div> <!-- /row -->
 
@@ -349,5 +386,86 @@
   <!-- Core Boostrap JS -->
   <script src="js/bootstrap.min.js"></script>
 
+<!--browser update warning-->
+  <script type="text/javascript">
+    var $buoop = {
+      vs:{i:9,f:15,o:12.1,s:5.1},
+      text: "Your browser is out of date. Please <a href=\"https://browser-update.org/update.html\">Update YouBrowser</a> for more security, comfort and the best experience on this site.",
+      newwindow: true
+    }; 
+    $buoop.ol = window.onload;
+    window.onload=function(){
+      try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+      var e = document.createElement("script");
+      e.setAttribute("type", "text/javascript");
+      e.setAttribute("src", "//browser-update.org/update.js");
+      document.body.appendChild(e);
+    }
+  </script>
+
+  <!--RFI Form Script-->  
+  <script>var ctaUrl = "https://online.theironyard.com/leads/capture";
+    var successUrl = window.customUrl ? window.customUrl : "/thank-you-bb/"
+    var errorMsg = "<p style='color: red;'>Your info couldn't be submitted. Please try again!</p>";
+    
+    function isEmail(email) {
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+    }
+    
+    function isPhone(phone) {
+      var regex = /^(\+\d{1,2})?[.\- ]?(?:(\((?:\(\d{3}\)|\d{3})\)\))|(?:\(\d{3}\)|\d{3}))?[.\- ]?\d{3}[.\- ]?\d{4}$/;
+      return regex.test(phone);
+    }
+    
+    $(document).ready(function() {
+      $(".cta-form").submit(function(event) {
+        event.preventDefault();
+        var $form = $(this);
+        var $nameInput = $form.find($('input[name=name]'));
+        var $phoneInput = $form.find($('input[name=phone]'));
+        var $emailInput = $form.find($('input[name=email]'));
+        
+        if ($emailInput.val() == "" || !isEmail($emailInput.val())) {
+          $form.addClass("error");
+          $emailInput.addClass('landing-red-border').val("").attr('placeholder', 'Invalid email');
+        } else {
+          $form.removeClass("error");
+          $emailInput.removeClass('landing-red-border');
+        }
+        
+        if ($phoneInput.length && $phoneInput.val() != "" && !isPhone($phoneInput.val())) {
+          $form.addClass("error");
+          $phoneInput.addClass('landing-red-border').val("").attr('placeholder', 'Invalid phone number');
+        } else {
+          $form.removeClass("error");
+          $phoneInput.removeClass('landing-red-border');
+        }
+        
+        if (!$form.hasClass("error")) {
+          var submiturl = ctaUrl;
+          var info = $('input[name!=":cq_csrf_token"]', this).serialize();
+          info += "&param_tags=" + encodeURIComponent(location.search.replace(/^\?/,'').split('&').join(','));
+          $.ajax({
+            type: 'POST',
+            url: submiturl,
+            data: info,
+            dataType: 'jsonp',
+            timeout: 5000
+          }).done(function(data, status, xhr) {
+            if (xhr.status == 200) {
+              window.location = successUrl;
+            } else {
+              $form.find(".error-msg").html(errorMsg);
+              $form.find(".error-msg").show(0).delay(2000).fadeOut(400);
+            }
+          }).fail(function() {
+            $form.find(".error-msg").html(errorMsg);
+            $form.find(".error-msg").show(0).delay(2000).fadeOut(400);
+          });
+        }
+      });    
+    });
+  </script>
 </body>
 </html>

@@ -107,6 +107,14 @@ a:hover {
 	margin-top: 130px;
 }
 
+.rfi-box{
+	background-color: rgba(255,255,255,0.3);
+	display: block;
+	height: 200px;
+	width: 100%;
+	margin: 150px auto 50px;
+}
+
 
 /* ----------------------------------------------------
 	 MENU STYLES
@@ -1023,6 +1031,15 @@ a:hover {
 }
 
 
+@media (max-width:990px){
+
+.rfi-box{
+	width: 70%;
+	margin: 50px auto 50px;
+}
+
+}
+
 @media (max-width:800px){
 
 .banner-info p {
@@ -1119,6 +1136,10 @@ a:hover {
 .banner-info {
 	width: 100%;
 	margin: 0;
+}
+
+.rfi-box{
+	width: 100%;
 }
 
 .head-nav ul li {
