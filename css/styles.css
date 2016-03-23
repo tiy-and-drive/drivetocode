@@ -14,7 +14,7 @@ p {
 	font-family: 'ff-tisa-web-pro', sans-serif;
 	font-weight: 400;
 	font-size: 1em;
-	color: #333;
+	color: #233139;
 	line-height: 1.7em;		
 }
 
@@ -167,12 +167,14 @@ a:hover {
 	padding: 3em 6em;
 }
 
-.about-right h1 {
+.about-right h2 {
    font-size: 1.8em;
    /*font-family: 'Pacifico', cursive;*/
    font-family: 'ff-tisa-web-pro', serif;	
-   color: #4f726e;
-   padding-bottom: 10px;
+   font-weight: 700;
+   font-style: italic;
+   color: #727d84;
+   /*padding-bottom: 10px;*/
 }
 
 .about-right p {
@@ -180,7 +182,7 @@ a:hover {
 	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'ff-tisa-web-pro', sans-serif;
 	font-weight: 400;
-	color: #333;
+	color: #233139;
 	line-height: 1.8em;
 	margin: 1em 0em;
 }
@@ -210,12 +212,14 @@ a:hover {
 	padding: 3em 8em;
 }
 
-.services-left h1 {
+.services-left h2 {
     font-size: 1.8em;
     /*font-family: 'Pacifico', cursive;*/
-    font-family: 'ff-tisa-web-pro', serif;	
-    color: #4f726e;
-    padding-bottom: 10px;
+    font-family: 'ff-tisa-web-pro', serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #727d84;
+    /*padding-bottom: 10px;*/
 }
 
 .services-left p {
@@ -223,7 +227,7 @@ a:hover {
 	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'ff-tisa-web-pro', sans-serif;
 	font-weight: 400;
-	color: #333;
+	color: #233139;
 	line-height: 1.8em;
 	margin: 1em 0em;
 }
@@ -283,23 +287,26 @@ a:hover {
 
 .gallery {
     font-size: 1.8em;
-    /*font-family: 'Pacifico', cursive;*/
     font-family: 'ff-tisa-web-pro', serif;	
-    color: #4f726e;
 	text-align: center;
 	margin-top: 45px;
 	padding-bottom: 26px;
 }
 
+.gallery h3{
+   font-weight: 700;
+   font-style: italic;
+   color: #727d84;
+}
+
 .gallery p {
 	font-size: 0.6em;
 	font-weight: 400;
-	color: #333;
+	color: #233139;
 	line-height: 1.8em;
-	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'ff-tisa-web-pro', sans-serif;
 	width: 49%;
-	padding: 13px;
+	padding: 0 13px 13px;
 	margin-top: 13px;
 }
 
@@ -353,7 +360,7 @@ a:hover {
    height: 100%;
    opacity: 0;
    border-radius: 0;
-   background: #5c8380;
+   background: #6fbbb7;
    color: #fff;
    vertical-align: middle;
    -webkit-transition: opacity 500ms;
@@ -396,7 +403,7 @@ a:hover {
 }
 
 .module-btn {
-    color: #333;
+    color: #233139;
 	background-color: transparent;
     border: 1px solid #CCC;
 	border-radius: 0;
@@ -404,11 +411,42 @@ a:hover {
 }
 
 .module-btn:hover {
-    color: #333;
+    color: #233139;
 	background-color: transparent;
 	border-color: #DFDFDF;
 }
 
+/*---------------------------------------------------
+	SIGNUP SECTION STYLES
+---------------------------------------------------*/
+
+.signup {
+    font-size: 1.8em;
+    font-family: 'ff-tisa-web-pro', serif;	
+    color: #233139;
+	text-align: center;
+	margin-top: 45px;
+	padding-bottom: 26px;
+	padding-top:24px;
+	clear:both;
+}
+
+.signup h3{
+   font-weight: 700;
+   font-style: italic;
+   color: #727d84;
+}
+
+.signup p {
+	font-size: 0.6em;
+	font-weight: 400;
+	color: #233139;
+	line-height: 1.8em;
+	font-family: 'ff-tisa-web-pro', sans-serif;
+	width: 49%;
+	padding: 0 13px 13px;
+	margin-top: 13px;
+}
 
 /*---------------------------------------------------
 	PORTFOLIO MODALS STYLES
@@ -431,14 +469,14 @@ a:hover {
     font-size: 2.4em;
 	/*font-family: 'Pacifico', cursive;*/
 	font-family: 'ff-tisa-web-pro', serif;	
-    color: #4f726e;
+    color: #233139;
 	text-transform: capitalize;
 }
 
 .portfolio-modal .modal-content h3 {
     margin-bottom: 15px;
     font-size: 1.6em;
-    color: #4f726e;
+    color: #233139;
 	/*font-family: 'Pacifico', cursive;*/
 	font-family: 'ff-tisa-web-pro', serif;	
 	text-align: left;
@@ -446,7 +484,7 @@ a:hover {
 
 .portfolio-modal .modal-content p {
     margin-bottom: 18px;
-	color: #333;
+	color: #233139;
 	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'ff-tisa-web-pro', sans-serif;
 	font-size: 1.1em;
@@ -456,7 +494,7 @@ a:hover {
 .portfolio-modal .modal-content .modals-text-intro {
     margin-top: 20px;
 	margin-bottom: 30px;
-	color: #333;
+	color: #233139;
 	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'ff-tisa-web-pro', sans-serif;
 	font-size: 1.2em;
@@ -561,7 +599,7 @@ a:hover {
     font-size: 1.8em;
     /*font-family: 'Pacifico', cursive;*/
     font-family: 'ff-tisa-web-pro', serif;	
-    color: #4f726e;
+    color: #233139;
 	text-align: center;
 	margin-top: 45px;
 	padding-bottom: 26px;
@@ -570,7 +608,7 @@ a:hover {
 .prices p {
 	font-size: 0.6em;
 	font-weight: 400;
-	color: #333;
+	color: #233139;
 	line-height: 1.8em;
 	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'ff-tisa-web-pro', sans-serif;
@@ -592,7 +630,7 @@ a:hover {
 
 .flat .plan li {
     padding: 10px 15px;
-	color: #333;
+	color: #233139;
     border-top: 1px solid #dae5e5;
 }
 
@@ -612,7 +650,7 @@ a:hover {
 	text-transform: lowercase;
 	text-align: center;
 	letter-spacing: 0.2em;
-	color: #333;
+	color: #233139;
 }
 
 .flat .plan.featured {
@@ -632,20 +670,20 @@ a:hover {
 }
 
 .flat .plan li .text {
-    color: #4f726e;
+    color: #233139;
 }
 	
 .action-btn {
-    color: #333;
+    color: #6fbbb7;
 	background-color: transparent;
-    border: 2px solid #4f726e;
+    border: 2px solid #6fbbb7;
 	border-radius: 0;
 }
 
 .action-btn:hover {
-    color: #333;
+    color: #1eb9a0;
 	background-color: transparent;
-	border-color: #64908b;	
+	border-color: #1eb9a0;	
 }
 
 .flat .plan i {
@@ -678,7 +716,7 @@ a:hover {
 	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'ff-tisa-web-pro', sans-serif;
 	font-weight: 400;
-	color: #333;
+	color: #233139;
 	line-height: 1.8em;
 	margin: 1em 0em;
 }
@@ -692,7 +730,7 @@ a:hover {
    font-size: 1.8em;
    /*font-family: 'Pacifico', cursive;*/
    font-family: 'ff-tisa-web-pro', serif;	
-   color: #4f726e;
+   color: #233139;
    padding-bottom: 10px;
 }
 
@@ -721,7 +759,7 @@ a:hover {
     font-size: 1.8em;
     /*font-family: 'Pacifico', cursive;*/
     font-family: 'ff-tisa-web-pro', serif;	
-    color: #4f726e;
+    color: #233139;
     padding-bottom: 10px;
 }
 
@@ -730,7 +768,7 @@ a:hover {
 	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'ff-tisa-web-pro', sans-serif;
 	font-weight: 400;
-	color: #333;
+	color: #233139;
 	line-height: 1.8em;
 	margin: 1em 0em;
 }
@@ -743,7 +781,7 @@ a:hover {
     font-size: 1.1em;
 	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'ff-tisa-web-pro', sans-serif;
-    color: #4f726e;
+    color: #233139;
 	text-align: center;
 	line-height: 1.4em;
 	margin-bottom: -2px;
@@ -765,7 +803,7 @@ a:hover {
     font-size: 1em;
 	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'ff-tisa-web-pro', sans-serif;
-    color: #4f726e;
+    color: #233139;
 	text-align: center;
 	line-height: 1.4em;
 }
@@ -941,8 +979,7 @@ a:hover {
 }
 
 .margin-services {
-	/*margin-top: -7px;*/
-	margin-top: -80px;
+	margin-top: -7px;
 }
 
 .margin-news {
@@ -960,6 +997,10 @@ a:hover {
 .about-right {
 	text-align: center;
 	/*padding: 1em 1em;*/
+}
+
+.about-right p{
+	margin-top:0;
 }
 
 .services-left {
@@ -1044,7 +1085,7 @@ a:hover {
 	margin-top: 40px;
 }
 
-.gallery p {
+.gallery p, .signup p {
 	margin-bottom: 30px;
 	width:90%;
 	padding: 0;
@@ -1185,7 +1226,7 @@ a:hover {
 	width: 70%;
 }
 
-.gallery p {
+.gallery p, .signup p {
 	width: 70%;
 }
 

@@ -32,7 +32,6 @@
 <script src="js/jquery.fitvids.js"></script>
 <script>
   $(document).ready(function(){
-    // Target your .container, .wrapper, .post, etc.
     $("#videoplayer").fitVids();
   });
 </script>
@@ -70,20 +69,20 @@
     
     <!-- Student Interviews -->            
     <div class="container">
-      <div class="gallery wow fadeIn" id="projects"><h3>Graduate to the Big Leagues</h3>
+      <div class="gallery" id="projects"><h3>Graduate to the Big Leagues</h3>
           <p class="col-xs-offset-3 intro-paragraph">The Iron Yard students and the Greenville Drive players have a lot in common. Watch some actual stories of students and players below.</p>
       </div>
             
         <div class="row">
-          <div class="col-xs-12 col-sm-4 col-md-4 img-gallery thumbs">
+          <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
               <div class="gallery-page-wrap">
-                  <img src="images/project1.jpg" alt="photo">
+                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
                        <div class="overlay">
                            <div class="gallery-page-inner">
-                           <h3>Photography</h3>
-                           <a href="images/project1.jpg"> 
+                           <h3>Jeff Hacker</h3>
+                           <a href="#portfolioModal1" data-toggle="modal">
                            <div class="text-center">
-                           <div class="green-btn btn">view image</div>
+                           <div class="green-btn btn">watch video</div>
                            </div> 
                            </a>
                            </div> 
@@ -92,13 +91,13 @@
           </div>   
           <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
               <div class="gallery-page-wrap">
-                  <img src="images/project2.jpg" alt="photo">
+                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
                        <div class="overlay">
                            <div class="gallery-page-inner">
-                           <h3>Print & web design</h3>
+                           <h3>Graduate 2</h3>
                            <a href="#portfolioModal2" data-toggle="modal"> 
                            <div class="text-center">
-                           <div class="green-btn btn">read more</div>
+                           <div class="green-btn btn">coming soon</div>
                            </div> 
                            </a>
                            </div> 
@@ -107,13 +106,58 @@
           </div> 
           <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
               <div class="gallery-page-wrap">
-                  <img src="images/project3.jpg" alt="photo">
+                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
                        <div class="overlay">
                            <div class="gallery-page-inner">
-                           <h3>Logo design</h3>
-                           <a href="#portfolioModal3" data-toggle="modal"> 
+                           <h3>Graduate 3</h3>
+                           <!-- <a href="#portfolioModal3" data-toggle="modal"> --> 
                            <div class="text-center">
-                           <div class="green-btn btn">read more</div>
+                           <div class="green-btn btn">coming soon</div>
+                           </div> 
+                           </a>
+                           </div> 
+                       </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
+              <div class="gallery-page-wrap">
+                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
+                       <div class="overlay">
+                           <div class="gallery-page-inner">
+                           <h3>Graduate 4</h3>
+                           <a href="#portfolioModal1" data-toggle="modal">
+                           <div class="text-center">
+                           <div class="green-btn btn">watch video</div>
+                           </div> 
+                           </a>
+                           </div> 
+                       </div>
+              </div>
+          </div>   
+          <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
+              <div class="gallery-page-wrap">
+                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
+                       <div class="overlay">
+                           <div class="gallery-page-inner">
+                           <h3>Graduate 5</h3>
+                           <a href="#portfolioModal2" data-toggle="modal"> 
+                           <div class="text-center">
+                           <div class="green-btn btn">coming soon</div>
+                           </div> 
+                           </a>
+                           </div> 
+                       </div>
+              </div>
+          </div> 
+          <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
+              <div class="gallery-page-wrap">
+                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
+                       <div class="overlay">
+                           <div class="gallery-page-inner">
+                           <h3>Graduate 6</h3>
+                           <!-- <a href="#portfolioModal3" data-toggle="modal"> --> 
+                           <div class="text-center">
+                           <div class="green-btn btn">coming soon</div>
                            </div> 
                            </a>
                            </div> 
@@ -137,12 +181,12 @@
 	<div class="about-holder" id="about">
 		
     <div class="col-md-6 about-left">
-			<img src="images/about.jpg"  alt="Demo Day at The Iron Yard">
+			<img src="http://fpoimg.com/1400x934?text=demo day thumb"  alt="Demo Day at The Iron Yard">
 		</div>
 		
     <div class="col-md-6 about-right margin-about">
 			
-      <h1>Events</h1>
+      <h2>Events</h2>
 			<p>Upcoming events at The Iron Yard Greenville campus.</p>
 
       <ul class="list-group col-xs-offset-1">
@@ -158,34 +202,32 @@
 	</div>
     <!-- /Meetup Events section -->
 
-
+<hr />
     <!-- Iron Pints at the 500 Club section -->
 
 	<div class="services-holder" id="services">
 
         <div class="col-md-6 services-left margin-services">
         
-            <h1>Iron Pints at the 500 Club</h1>
-			       <p>Join us before every Wednesday home games at Iron Pints at the 500 Club. Food and drinks will be available from 6-8pm with one of our staff iin attendance to answer any questions you may have about our programs.</p>
+            <h2>Iron Pints at the 500 Club</h2>
+			       <p>Join us before every Wednesday home games at Iron Pints at the 500 Club. Food and drinks will be available from 6-8pm with one of our staff in attendance to answer any questions you may have about our programs.</p>
 
              <a href="http://www.milb.com/schedule/?sid=t428" target="blank" class="action-btn btn">2016 Schedule</a>
 		   
         </div>
        
         <div class="col-md-6 services-right">
-			       <img src="images/services.jpg"  alt="Iron Pints pint glass">  
+			       <img src="http://fpoimg.com/1400x934?text=iron pints thumb"  alt="Iron Pints pint glass">  
         </div>
 
 	</div>
-    <!-- /Iron Pints at the 500 Club section -->      
-        
-<!-- 	<div class="container">
-        <div class="prices" id="prices"><h3>Prices</h3>
-             <p class="col-xs-offset-3 intro-paragraph">The principle goal of education is to create a personalities who are capable of doing new things, not simply of repeating what other generations have done - a personalities who are creative, inventive and discoverers.</p>
-        </div>
-  </div> -->
-    
-    <!-- Student Video Modals -->
+
+  <!-- Email Signup -->            
+    <div class="container">
+      <div class="signup" id="projects"><h3>Graduate to the Big Leagues</h3>
+          <p class="col-xs-offset-3 intro-paragraph">The Iron Yard students and the Greenville Drive players have a lot in common. Watch some actual stories of students and players below.</p>
+      </div>
+    </div>
 
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -199,13 +241,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="modal-body">
-                            <h2>Creativity</h2>
-                            <p class="item-intro">lorem ipsum</p>
-                            <img class="img-responsive" src="images/project1.jpg" alt="">
-                            <p>The principle goal of education is to create a personalities who are capable of doing new things, not simply of repeating what other generations have done - a personalities who are creative, inventive and discoverers.
-                            The principle goal of education is to create a personalities who are capable of doing new things, not simply of repeating what other generations have done - a personalities who are creative, inventive and discoverers.</p>
-                            <button type="button" class="btn module-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        <div id="videoplayer" class="modal-body">
+                            
+                              <iframe src="https://player.vimeo.com/video/116286145?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            
                         </div>
                     </div>
                 </div>
@@ -228,7 +267,8 @@
                         <div class="modal-body">
                             <h2>Creativity</h2>
                             <p class="item-intro">great motivator</p>
-                             <img class="img-responsive" src="images/project2.jpg" alt="">                         <div class="hr"></div>
+                             <img class="img-responsive" src="images/project2.jpg" alt="">                         
+                             <div class="hr"></div>
                             <div class="modals-text-intro">The principle goal of education is to create a personalities who are capable of doing new things.
                             </div>
                         </div>
@@ -289,385 +329,7 @@
         </div>
     </div>
     
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="modal-body">
-                            <h2>Creativity</h2>
-                            <p class="item-intro">great motivator</p>
-                             <img class="img-responsive" src="images/project3.jpg" alt="">                         <div class="hr"></div>
-                            <div class="modals-text-intro">The principle goal of education is to create a personalities who are capable of doing new things.
-                           </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="modal-body">
-                          <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
-                    </ol>
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="images/project1.jpg" alt="photo"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/project2.jpg" alt="photo"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/project3.jpg" alt="photo"/>
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic1" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic1" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-5">
-                        <div class="modal-body">
-                            <h3>Creativity is a great motivator</h3>
-                            <p>Creativity is a great motivator because it makes people interested in what they are doing. Creativity gives hope that there can be a worthwhile idea. Creativity gives the possibility of some sort of achievement to everyone. Creativity makes life more fun and more interesting.      <p>
-                           Creativity is a great motivator because it makes people interested in what they are doing. Creativity gives hope that there can be a worthwhile idea. Creativity gives the possibility of some sort of achievement to everyone. Creativity makes life more fun and more interesting.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                     <div class="modal-body">
-                     <button type="button" class="btn module-btn" data-dismiss="modal">
-                      <i class="fa fa-times"></i> Close Project</button>                     </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="modal-body">
-                            <h2>Creativity</h2>
-                            <p class="item-intro">great motivator</p>
-                             <img class="img-responsive" src="images/project4.jpg" alt="">                         <div class="hr"></div>
-                            <div class="modals-text-intro">The principle goal of education is to create a personalities who are capable of doing new things.
-                           </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="modal-body">
-                          <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="images/project1.jpg" alt="photo"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/project2.jpg" alt="photo"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/project3.jpg" alt="photo"/>
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic2" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic2" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-5">
-                        <div class="modal-body">
-                            <h3>Creativity is a great motivator</h3>
-                            <p>Creativity is a great motivator because it makes people interested in what they are doing. Creativity gives hope that there can be a worthwhile idea. Creativity gives the possibility of some sort of achievement to everyone. Creativity makes life more fun and more interesting.      <p>
-                           Creativity is a great motivator because it makes people interested in what they are doing. Creativity gives hope that there can be a worthwhile idea. Creativity gives the possibility of some sort of achievement to everyone. Creativity makes life more fun and more interesting.
-                            </p>
-                            <p>
-                            <a href="">View the website 
-                            <i class="fa fa-external-link"></i>
-                            </a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                     <div class="modal-body">
-                     <button type="button" class="btn module-btn" data-dismiss="modal">
-                      <i class="fa fa-times"></i> Close Project</button>                     </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="modal-body">
-                            <h2>Creativity</h2>
-                            <p class="item-intro">great motivator</p>
-                             <img class="img-responsive" src="images/project5.jpg" alt="">
-                             <p>The principle goal of education is to create a personalities who are capable of doing new things, not simply of repeating what other generations have done - a personalities who are creative, inventive and discoverers.
-                            The principle goal of education is to create a personalities who are capable of doing new things, not simply of repeating what other generations have done - a personalities who are creative, inventive and discoverers.</p>
-                            <button type="button" class="btn module-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="modal-body">
-                            <h2>Creativity </h2>
-                            <p class="item-intro">great motivator</p>
-                             <img class="img-responsive" src="images/project6.jpg" alt="">
-                             <p>The principle goal of education is to create a personalities who are capable of doing new things, not simply of repeating what other generations have done - a personalities who are creative, inventive and discoverers.
-                            The principle goal of education is to create a personalities who are capable of doing new things, not simply of repeating what other generations have done - a personalities who are creative, inventive and discoverers.</p>
-                            <button type="button" class="btn module-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 7 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="modal-body">
-                            <h2>Creativity</h2>
-                            <p class="item-intro">great motivator</p>
-                             <img class="img-responsive" src="images/project7.jpg" alt="">
-                             <p>The principle goal of education is to create a personalities who are capable of doing new things, not simply of repeating what other generations have done - a personalities who are creative, inventive and discoverers.
-                            The principle goal of education is to create a personalities who are capable of doing new things, not simply of repeating what other generations have done - a personalities who are creative, inventive and discoverers.</p>
-                            <button type="button" class="btn module-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Portfolio Modal 8 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="modal-body">
-                            <h2>Creativity</h2>
-                            <p class="item-intro">great motivator</p>
-                             <img class="img-responsive" src="images/project8.jpg" alt="">                         <div class="hr"></div>
-                            <div class="modals-text-intro">The principle goal of education is to create a personalities who are capable of doing new things.
-                           </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="modal-body">
-                          <div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic4" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic4" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic4" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="images/project1.jpg" alt="photo"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/project2.jpg" alt="photo"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/project3.jpg" alt="photo"/>
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic4" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic4" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                          </div>
-                        </div>
-
-
-                    </div>
-
-                    <div class="col-md-5">
-                        <div class="modal-body">
-                            <h3>Creativity is a great motivator</h3>
-                            <p>Creativity is a great motivator because it makes people interested in what they are doing. Creativity gives hope that there can be a worthwhile idea. Creativity gives the possibility of some sort of achievement to everyone. Creativity makes life more fun and more interesting.      <p>
-                           Creativity is a great motivator because it makes people interested in what they are doing. Creativity gives hope that there can be a worthwhile idea. Creativity gives the possibility of some sort of achievement to everyone. Creativity makes life more fun and more interesting.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                     <div class="modal-body">
-                     <button type="button" class="btn module-btn" data-dismiss="modal">
-                      <i class="fa fa-times"></i> Close Project</button>                     </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Portfolio Modal 9 -->
-     <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="modal-body">
-                            <h2>Creativity</h2>
-                            <p class="item-intro">great motivator</p>
-                             <img class="img-responsive" src="images/project9.jpg" alt="">                         <div class="hr"></div>
-                            <div class="modals-text-intro">The principle goal of education is to create a personalities who are capable of doing new things.
-                           </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="modal-body">
-                          <div id="carousel-example-generic5" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic5" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic5" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic5" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="images/project1.jpg" alt="photo"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/project2.jpg" alt="photo"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/project3.jpg" alt="photo"/>
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic5" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic5" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-5">
-                        <div class="modal-body">
-                            <h3>Creativity is a great motivator</h3>
-                            <p>Creativity is a great motivator because it makes people interested in what they are doing. Creativity gives hope that there can be a worthwhile idea. Creativity gives the possibility of some sort of achievement to everyone. Creativity makes life more fun and more interesting.      <p>
-                           Creativity is a great motivator because it makes people interested in what they are doing. Creativity gives hope that there can be a worthwhile idea. Creativity gives the possibility of some sort of achievement to everyone. Creativity makes life more fun and more interesting.
-                            </p>
-                            <p>
-                            <a href="">View something 
-                            <i class="fa fa-external-link"></i>
-                            </a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                     <div class="modal-body">
-                     <button type="button" class="btn module-btn" data-dismiss="modal">
-                      <i class="fa fa-times"></i> Close Project</button>                     </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
- 
   <!-- Gallery JavaScript -->
   <script src="js/touchtouch.jquery.js"></script>
   <script src="js/script.js"></script>
