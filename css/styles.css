@@ -66,6 +66,7 @@ a:hover {
     background-size: cover;
     -o-background-size: cover;
 	min-height: 640px;
+	padding-top: 40px;
 }
 
 .banner-info {
@@ -107,14 +108,83 @@ a:hover {
 	margin-top: 130px;
 }
 
+
+/* ----------------------------------------------------
+	 RFI BOX
+------------------------------------------------------- */
+
+
 .rfi-box{
 	background-color: rgba(255,255,255,0.3);
 	display: block;
-	height: 200px;
+	height: auto;
 	width: 100%;
-	margin: 150px auto 50px;
+	padding: 30px;
+	margin: 30px auto 50px;
+	border-radius: 4px; 
+    background-clip: padding-box;
 }
 
+#main-rfi h4{
+   font-size: 1.3em;
+   font-family: 'ff-tisa-web-pro', serif;
+   font-weight: 700;
+   color: #ffffff;
+}
+
+#main-rfi ul, #main-rfi li, p{
+	font-family: 'ff-tisa-web-pro', sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	color: #ffffff;
+	line-height: 1.7em;
+	list-style-type: none;
+}
+
+#main-rfi li label.desc{
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+#main-rfi ul{
+	padding: 0;
+}
+
+#main-rfi input{
+    background-color: #EDF0F2;
+    border: 2px solid #E5EBEF;
+    width: 100%;
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 10px 20px;
+    color: #202F37;
+    font-size: 1em;
+    -webkit-appearance: none;
+}
+
+#main-rfi input:focus{
+    border: 2px solid #E5EBEF;
+    background-color: #FFF;
+    outline: none;
+ }
+
+ #main-rfi input[type="submit"] {
+ 	font-family: 'ff-tisa-web-pro', serif;	
+    font-weight: 700;
+    padding: 10px 0;
+    background: #6FBBB7;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    border: none;
+    width: 50%;
+    text-decoration: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
 
 /* ----------------------------------------------------
 	 MENU STYLES
