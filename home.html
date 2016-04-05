@@ -41,14 +41,22 @@
     <!-- header -->
 	<div class="banner">
 		<div class="container">
-
-
-       <div class="row">
+        <img src="images/TIY-logo.svg" class="logo" alt="The Iron Yard logo">
+        <h1>Welcome Greenville Drive fans!</h1>
+    </div>
+		</div>
+	</div>
+    <!-- /header -->
+    
+       <!-- Intro -->
+      <div class="intro-section">
+      <div class="container">
+      <div class="row">
           
           <div class="col-md-7">
-            <div class="banner-info">
-              <img src="images/TIY-logo.svg" class="logo" alt="The Iron Yard logo">
-              <p>The Iron Yard is a a code school where we teach students to program and prepare them for careers in the tech industry. Our home is in Greenville, and we're proud to be partnered with the Greenville Drive in order to let the community in on the great things that are happening with our students right in their own backyard. </p>
+            <div class="intro-info">
+              <h2>The Iron Yard and Greenville Drive partnership</h2>
+              <p>Just as the Greenville Drive provides the first step for baseball players on their way to a career in professional baseball, The Iron Yard provides the first step for adults interested in beginning a career as a software developer. We are proud to partner with the Greenville Drive and celebrate the successes of both our Drive players and our local Iron Yard graduates.</p>
             </div>
           </div>
 
@@ -60,8 +68,8 @@
 
                <form id="main-rfi" name="main-rfi" accept-charset="UTF-8" autocomplete="off" class="cta-form">
                   <header id="header" class="info">
-                    <h4>Want to know more about us?</h4>
-                    <p>Enter your email below and we'll send you a pdf with more information.</p>
+                    <h3>I want more information</h3>
+                    <p>Want to know a bit more about us and how we help people take control of their careers? Enter your information here and we’ll get it to you ASAP. </p>
                     <div class="error-msg"></div>
                   </header>
                   <ul style="max-width:100%;">
@@ -74,18 +82,15 @@
                     <li id="foli2" class="notranslate">
                       <label id="title2" for="email" class="desc">Email</label>
                       <div>
-                        <input id="Field2" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="2" required="required" class="field text medium"/>
+                        <input id="Field2" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="2" required="required" class="field text medium"/><input name="tags" type="hidden" value="paid lead, event based landing page, greenville drive, the iron yard fact sheet, Greenville, rfi_email, captured"/>
                       </div>
-                    </li>
-                    <li id="foli3" class="phone notranslate">
-                      <label id="title3" for="phone" class="desc">Phone Number (optional)</label><span>
-                        <input id="Field3" name="phone" type="tel" value="" size="20" maxlength="20" tabindex="3" class="field text"/>
-                        <input name="tags" type="hidden" value="organic lead, drive to code landing page, fact sheet, rfi_email, Greenville, captured"/></span>
                     </li>
                     <li class="buttons">
                       <div>
-                        <input id="saveForm" name="saveForm" tabindex="4" type="submit" value="Submit" onClick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Information Request', eventLabel: 'Drive to Code'});" class="btText submit btn section-headline"/>
+                        <input id="saveForm" name="saveForm" tabindex="4" type="submit" value="I want to be in the know!" onClick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Information Request', eventLabel: 'Greenville Drive to Code'}) 
+                        class="btText submit btn section-headline"" />
                       </div>
+
                     </li>
                   </ul>
                 </form> 
@@ -97,25 +102,23 @@
           <!-- /RFI -->
 
       </div> <!-- /row -->
-
-		</div>
-	</div>
-    <!-- /header -->
-    
+    </div>
+    </div>
+      <!-- /Intro -->
     
     <!-- Student Interviews -->            
-    <div class="container">
+    <div class="container interviews">
       <div class="gallery" id="projects"><h3>Graduate to the Big Leagues</h3>
-          <p class="col-xs-offset-3 intro-paragraph">The Iron Yard students and the Greenville Drive players have a lot in common. Watch some actual stories of students and players below.</p>
+          <p class="col-xs-offset-3 intro-paragraph">Our students and the Greenville Drive players have a lot in common. Check out these actual stories of students and players who have made it to the career <wbr>Big Leagues.</p>
       </div>
             
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
               <div class="gallery-page-wrap">
-                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
+                  <img src="images/Grad-Matthew.jpg" alt="Matt Chastain">
                        <div class="overlay">
                            <div class="gallery-page-inner">
-                           <h3>Jeff Hacker</h3>
+                           <h3>Matt Chastain</h3>
                            <a href="#portfolioModal1" data-toggle="modal">
                            <div class="text-center">
                            <div class="green-btn btn">watch video</div>
@@ -127,11 +130,11 @@
           </div>   
           <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
               <div class="gallery-page-wrap">
-                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
+                  <img src="images/Grad-Amy.jpg" alt="Amy Burka">
                        <div class="overlay">
                            <div class="gallery-page-inner">
-                           <h3>Graduate 2</h3>
-                           <a href="#portfolioModal2" data-toggle="modal"> 
+                           <h3>Amy Burka</h3>
+                           <!-- <a href="#portfolioModal2" data-toggle="modal"> --> 
                            <div class="text-center">
                            <div class="green-btn btn">coming soon</div>
                            </div> 
@@ -142,10 +145,10 @@
           </div> 
           <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
               <div class="gallery-page-wrap">
-                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
+                  <img src="images/Grad-Jeff.jpg" alt="Jeff Hacker">
                        <div class="overlay">
                            <div class="gallery-page-inner">
-                           <h3>Graduate 3</h3>
+                           <h3>Jeff Hacker</h3>
                            <!-- <a href="#portfolioModal3" data-toggle="modal"> --> 
                            <div class="text-center">
                            <div class="green-btn btn">coming soon</div>
@@ -155,51 +158,7 @@
                        </div>
               </div>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
-              <div class="gallery-page-wrap">
-                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
-                       <div class="overlay">
-                           <div class="gallery-page-inner">
-                           <h3>Graduate 4</h3>
-                           <a href="#portfolioModal1" data-toggle="modal">
-                           <div class="text-center">
-                           <div class="green-btn btn">watch video</div>
-                           </div> 
-                           </a>
-                           </div> 
-                       </div>
-              </div>
-          </div>   
-          <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
-              <div class="gallery-page-wrap">
-                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
-                       <div class="overlay">
-                           <div class="gallery-page-inner">
-                           <h3>Graduate 5</h3>
-                           <a href="#portfolioModal2" data-toggle="modal"> 
-                           <div class="text-center">
-                           <div class="green-btn btn">coming soon</div>
-                           </div> 
-                           </a>
-                           </div> 
-                       </div>
-              </div>
-          </div> 
-          <div class="col-xs-12 col-sm-4 col-md-4 img-gallery">
-              <div class="gallery-page-wrap">
-                  <img src="http://fpoimg.com/1015x675?text=video thumb" alt="photo">
-                       <div class="overlay">
-                           <div class="gallery-page-inner">
-                           <h3>Graduate 6</h3>
-                           <!-- <a href="#portfolioModal3" data-toggle="modal"> --> 
-                           <div class="text-center">
-                           <div class="green-btn btn">coming soon</div>
-                           </div> 
-                           </a>
-                           </div> 
-                       </div>
-              </div>
-          </div> 
+          
           
                  
         </div><!-- /row -->
@@ -217,13 +176,13 @@
 	<div class="about-holder" id="about">
 		
     <div class="col-md-6 about-left">
-			<img src="http://fpoimg.com/1400x934?text=demo day thumb"  alt="Demo Day at The Iron Yard">
+			<a href="http://www.meetup.com/The-Iron-Yard-Greenville/events/229673527/" target="_blank"><img src="images/Promo-Demo-Day.jpg"  alt="Demo Day at The Iron Yard"></a>
 		</div>
 		
     <div class="col-md-6 about-right margin-about">
 			
       <h2>Events</h2>
-			<p>Upcoming events at The Iron Yard Greenville campus.</p>
+			<p>We’d love to meet you in person! Check out some of our upcoming events and RSVP here:</p>
 
       <ul class="list-group col-xs-offset-1">
             <li class="list-group-item"></i><a href="http://www.meetup.com/The-Iron-Yard-Greenville/events/226617735/" target="blank">Free Crash Course - Build Your Own Homepage!</a><br />Tue, April 12, 6:00pm</li>
@@ -246,14 +205,14 @@
         <div class="col-md-6 services-left margin-services">
         
             <h2>Iron Pints at the 500 Club</h2>
-			       <p>Join us before every Wednesday home games at Iron Pints at the 500 Club. Food and drinks will be available from 6-8pm with one of our staff in attendance to answer any questions you may have about our programs.</p>
+			       <p>During every Wednesday home game, join us at Iron Pints at The Iron Yard 500 Club. Drink specials will be available from 6-8pm, and souvenir Iron Pints glasses will be available for $3. Plus, meet some of our Iron Yard team members and learn a bit more about what we’re all about! </p>
 
-             <a href="http://www.milb.com/schedule/?sid=t428" target="blank" class="action-btn btn">2016 Schedule</a>
+             <a href="http://www.milb.com/schedule/?sid=t428" target="blank" class="action-btn btn" onClick="ga('send', 'event', { eventCategory: 'Schedule', eventAction: '2016 Iron Pint Events', eventLabel: 'Greenville Drive to Code'})">2016 Schedule</a>
 		   
         </div>
        
         <div class="col-md-6 services-right">
-			       <img src="http://fpoimg.com/1400x934?text=iron pints thumb"  alt="Iron Pints pint glass">  
+			       <img src="images/Promo-Iron-Pints.jpg"  alt="Iron Pints pint glass">  
         </div>
 
 	</div>
@@ -288,82 +247,7 @@
         </div>
     </div>
     
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="modal-body">
-                            <h2>Creativity</h2>
-                            <p class="item-intro">great motivator</p>
-                             <img class="img-responsive" src="images/project2.jpg" alt="">                         
-                             <div class="hr"></div>
-                            <div class="modals-text-intro">The principle goal of education is to create a personalities who are capable of doing new things.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="modal-body">
-                          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="images/project1.jpg" alt="photo"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/project2.jpg" alt="photo"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/project3.jpg" alt="photo"/>
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-5">
-                        <div class="modal-body">
-                            <h3>Creativity is a great motivator</h3>
-                            <p>Creativity is a great motivator because it makes people interested in what they are doing. Creativity gives hope that there can be a worthwhile idea. Creativity gives the possibility of some sort of achievement to everyone. Creativity makes life more fun and more interesting.      <p>
-                           Creativity is a great motivator because it makes people interested in what they are doing. Creativity gives hope that there can be a worthwhile idea. Creativity gives the possibility of some sort of achievement to everyone. Creativity makes life more fun and more interesting.
-                            </p>
-                            <p>
-                            <a href="">View the website 
-                            <i class="fa fa-external-link"></i>
-                            </a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                     <div class="modal-body">
-                     <button type="button" class="btn module-btn" data-dismiss="modal">
-                      <i class="fa fa-times"></i> Close Project</button>                     </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
 
   <!-- Gallery JavaScript -->
