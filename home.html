@@ -74,23 +74,6 @@
 
           <!-- RFI -->
 
-
-
-<!--        <form id="form1" name="form1" accept-charset="UTF-8" class="sidebar-landing short cta-form js-sidebar-sticky">
-                <span><strong>{{ page.rfi-bold-text }}</strong></span>
-                <span>{{ page.rfi-text }}</span>
-                <label>Email Address</label>
-                <input id="Field1" name="email" type="email" required class="field text medium">
-                <input name="tags" type="hidden" value="{{ page.rfi-tags }}">
-                <input type="hidden" name="touchpoint[kind]" value="paid" />
-                <input type="hidden" name="touchpoint[requested_info]" value="test_rfi" />
-                <button id="saveForm" name="saveForm" type="submit" class="sidebar-landing-btn submit btn" onClick="ga('send', 'event', { eventCategory: '{{ page.rfi-eventCategory }}', eventAction: '{{ page.rfi-eventAction }}', eventLabel: '{{ page.rfi-eventLabel }}'});">{{ page.rfi-submit-btn }}</button>
-            </form>
- -->
-
-
-
-
           <div class="col-md-5">
             <div class="rfi-box">
 
@@ -304,7 +287,7 @@
   <script type="text/javascript">
     var $buoop = {
       vs:{i:9,f:15,o:12.1,s:5.1},
-      text: "Your browser is out of date. Please <a href=\"https://browser-update.org/update.html\">Update YouBrowser</a> for more security, comfort and the best experience on this site.",
+      text: "Your browser is out of date. Please <a href=\"https://browser-update.org/update.html\">Update Your Browser</a> for more security, comfort and the best experience on this site.",
       newwindow: true
     }; 
     $buoop.ol = window.onload;
@@ -319,7 +302,7 @@
 
   <!--RFI Form Script-->  
   <script>var ctaUrl = "https://academy.theironyard.com/leads/capture";
-var successUrl = window.customUrl ? window.customUrl : "/thank-you-bb/"
+var successUrl = window.customUrl ? window.customUrl : "landing.theironyard.com/thank-you-bb/"
 var errorMsg = "<p style='color: red;'>Your info couldn't be submitted. Please try again!</p>";
 
 function isEmail(email) {
